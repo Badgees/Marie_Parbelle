@@ -1,3 +1,67 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+h2, h3, h4 {
+  font-weight: 300;
+}
+
+.div-h2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 2%;
+}
+
+.div-h2 h2 {
+  color: #009696;
+  border-top: #009696 solid 7px;
+  border-right: #009696 solid 7px;
+  font-size: 3.5rem;
+  padding: 1.5rem 5rem 0 0;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.div-h2-secondary {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 3%;
+}
+
+.div-h2-secondary h2 {
+  color: white;
+  border-top: white solid 7px;
+  border-left: white solid 7px;
+  font-size: 3.5rem;
+  padding: 1.5rem 0 0 5rem;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,13 +174,6 @@ header .header-lower .header-lower-right nav ul li button:hover {
   background-color: #006363;
   color: #e6e6e6;
   cursor: pointer;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-section {
