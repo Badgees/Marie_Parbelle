@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    
+    .header-upper {
+        display: flex;
+        background-color: $primary;
+        width: 100%;
+        height: 3rem;
+        align-items: center;
+        
+        div {
+            display: flex;
+            width: 50%;
+            
+            p {
+                margin: 0 3%;
+            }
+        }
+        
+        .header-upper-left {
+            margin-left: 5%;
+        }
+    }
+    
+    .header-lower {
+        background-color: rgba(0, 50, 50, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        .header-lower-left {
+            width: 40%;
+            
+            p {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: 100;
+                font-size: 4rem;
+                text-align: center;
+                margin: 1rem 0;
+            }
+        }
+
+        .header-lower-right {
+            width: 60%;
+            text-align: center;
+            align-self: center;
+
+            nav {
+
+                ul {
+
+                    li {
+                        display: flex;
+                        justify-content: space-evenly;
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 1.5rem;
+                            align-self: center;
+
+                            &:hover {
+                                color: lighten($primary, 10);
+                            }
+                        }
+
+                        button {
+                            background-color: $primary;
+                            color: white;
+                            border: none;
+                            width: 18rem;
+                            height: 4rem;
+                            border-radius: 10px;
+                            font-size: 1.5rem;
+
+                            &:hover {
+                                background-color:darken($primary, 10);
+                                color: darken(white, 10);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
